@@ -1,0 +1,3 @@
+[submodule "n8n-nodes-atproto"]
+	path = n8n-nodes-atproto
+	url = github:andrioid/n8n-nodes-atproto.git

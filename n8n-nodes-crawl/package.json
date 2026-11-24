@@ -1,0 +1,48 @@
+{
+    "name": "n8n-nodes-crawl",
+    "version": "0.1.0",
+    "description": "Extract web content",
+    "license": "MIT",
+    "homepage": "https://rooseveltsonfack.com",
+    "keywords": [
+        "n8n-community-node-package"
+    ],
+    "author": {
+        "name": "roosevelt sonfack",
+        "email": "rooseveltsonfack@gmail.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/roo7690/n8n-nodes.git"
+    },
+    "scripts": {
+        "build": "n8n-node build",
+        "build:watch": "tsc --watch",
+        "dev": "n8n-node dev",
+        "lint": "n8n-node lint",
+        "lint:fix": "n8n-node lint --fix",
+        "release": "n8n-node release",
+        "prepublishOnly": "n8n-node prerelease"
+    },
+    "files": [
+        "dist"
+    ],
+    "n8n": {
+        "n8nNodesApiVersion": 1,
+        "strict": true,
+        "credentials": [],
+        "nodes": [
+            "dist/nodes/Crawl4AI/Crawl4ai.node.js"
+        ]
+    },
+    "devDependencies": {
+        "@n8n/node-cli": "*",
+        "eslint": "9.32.0",
+        "prettier": "3.6.2",
+        "release-it": "^21.1.0",
+        "typescript": "^6.0.3"
+    },
+    "peerDependencies": {
+        "n8n-workflow": "*"
+    }
+}
